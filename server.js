@@ -1,7 +1,7 @@
 // Sets up Node
 var express = require("express");
 var app = express();
-var port = 8080;
+var port = process.env.PORT || 8080;
 
 // Sets up the Express app to handle data parsing
 var bodyParser = require("body-parser");
